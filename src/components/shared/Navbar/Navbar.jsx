@@ -1,6 +1,18 @@
+import { Link } from "react-router-dom";
+import LOGO from "../../../assets/icons/logo.svg";
+import "./Navbar.css";
+
 export default function Navbar() {
+
+    const options =<>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Blog</li>
+        <li>Contact</li>
+    </>
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 h-32">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -23,52 +35,25 @@ export default function Navbar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+           {
+            options
+           }
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <Link className="btn btn-ghost normal-case text-xl">
+            <img src={LOGO} alt="LOGO" style={{marginTop:"-20px"}}/>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
+        <ul className="menu menu-horizontal px-1 flex items-center gap-20 navbarUl">
+         {
+            options
+         }
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+      <button className="btn btn-outline btn-secondary">Appointment</button>
+       
       </div>
     </div>
   );

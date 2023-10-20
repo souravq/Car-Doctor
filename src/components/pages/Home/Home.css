@@ -1,0 +1,37 @@
+.carouselDiv{
+    height: 600px;
+    border: 1px solid;
+    border-radius: 20px;
+    background: linear-gradient(to right, #4caf50, #2196F3); 
+}
+.bannerHeading{
+    color: var(--White-Color, #FFF);
+font-family: Inter;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 65px; /* 125% */
+}
+.bannerDescription{
+    color: var(--White-Color, #FFF);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+text-transform: capitalize;
+margin-top: 20px;
+}
+.ContentDiv{
+    margin-top: 120px;
+    margin-left: 30px;
+}
+.bannerButtonText{
+    color: var(--White-Color, #FFF);
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
