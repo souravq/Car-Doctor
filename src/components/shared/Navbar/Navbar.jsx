@@ -52,7 +52,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-      <button className="btn btn-outline btn-secondary">Appointment</button>
+      <button className="btn btn-outline btn-error">Appointment</button>
        
       </div>
     </div>

@@ -35,3 +35,72 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
+.aboutUs{
+    color: var(--ff-3811, #FF3811);
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.aboutUsHeading{
+    color: var(--Dark-01, #151515);
+font-family: Inter;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.aboutUsText{
+    color: var(--Dark-03, #737373);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+text-transform: capitalize;
+}
+.aboutUsButtonText{
+    color: var(--White-Color, #FFF);
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+/* Service section */
+.serviceTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceTopHeading{
+    color: var(--ff-3811, #FF3811);
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.serviceTopHeadingText{
+    color: var(--Dark-01, #151515);
+font-family: Inter;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.serviceTopText{
+    color: var(--Dark-03, #737373);
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+text-transform: capitalize;
+}

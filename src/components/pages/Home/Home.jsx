@@ -2,7 +2,11 @@ import bannerImage1 from "../../../assets/images/banner/5.jpg";
 import bannerImage2 from "../../../assets/images/banner/1.jpg";
 import bannerImage3 from "../../../assets/images/banner/2.jpg";
 import bannerImage4 from "../../../assets/images/banner/3.jpg";
+
+import aboutUs1 from "../../../assets/images/about_us/person.jpg";
+import aboutUs2 from "../../../assets/images/about_us/parts.jpg";
 import "./Home.css";
+import Card from "./Card";
 
 export default function Home() {
   return (
@@ -149,21 +153,44 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="hero min-h-screen">
-        <div className="hero-content flex-col lg:flex-row">
-          <img
-            src="/images/stock/photo-1635805737707-575885ab0820.jpg"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
-          </div>
+      <div className="hero h-4/5 mt-16 mb-16">
+        <div className="hero-content flex-col lg:flex-row relative">
+            <div style={{position:"relative"}} className="w-2/4">
+                <img
+                src={aboutUs1}
+                className="max-w-sm rounded-lg shadow-2xl"
+                />
+            <img src={aboutUs2} className="max-w-sm rounded-lg shadow-2xl" alt="About Us" style={{position:"absolute",
+    top: "50%",
+    left: "30%",
+    border: "10px solid white"}}/>
+            </div>
+            
+            <div className="w-2/4 ml-10">
+                <p className="aboutUs">About Us</p><br/>
+                <p className="aboutUsHeading">We are qualified & of experience in this field!</p><br/>
+                <p className="aboutUsText">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. <br/>
+                The majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. 
+                </p><br/>
+                <button className="btn btn-error aboutUsButtonText">Get More Info</button>
+            </div>
+        </div>
+      </div>
+      <div className="mt-28">
+        <div className="serviceTop">
+            <p className="serviceTopHeading">Service</p>
+            <p className="serviceTopHeadingText">Our Service Area</p>
+            <p className="serviceTopText">The majority have suffered alteration in some form, by injected humour, or randomised<br/> words which do not look even slightly believable.</p>
+        </div>
+        <br/>
+        <div className="grid grid-cols-3 gap-4 gap-x-8">
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </div>
       </div>
     </div>
