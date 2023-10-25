@@ -26,8 +26,6 @@ export default function AuthContext({children}) {
     function getUserStatus(){
       onAuthStateChanged(auth,(user)=>{
         if(user){
-          console.log("User Sign In")
-          console.log(user);
           setUsername(user?.email);
         }else{
           console.log("User is signed out")

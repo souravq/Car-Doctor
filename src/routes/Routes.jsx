@@ -3,6 +3,7 @@ import Main from "../components/layout/Main";
 import Home from "../components/pages/Home/Home";
 import Login from "../components/pages/Login/Login";
 import Registration from "../components/pages/Registration/Registration";
+import CheckOut from "../components/pages/Service/CheckOut/CheckOut";
 
 const routes = createBrowserRouter([
     {
@@ -11,7 +12,8 @@ const routes = createBrowserRouter([
         children:[
             {
                 path:"/",
-                element:<Home/>
+                element:<Home/>,
+                loader:()=>fetch("http://localhost:5000/services")
             },
             {
                 path:"/login",
@@ -20,6 +22,10 @@ const routes = createBrowserRouter([
             {
                 path:"/register",
                 element:<Registration/>
+            },
+            {
+                path:"/checkout/:id",
+                element:<CheckOut/>
             },
         ]
     }

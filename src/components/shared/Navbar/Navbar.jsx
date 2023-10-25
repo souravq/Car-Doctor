@@ -44,7 +44,7 @@ export default function Navbar() {
            }
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl">
+        <Link className="normal-case text-xl">
             <img src={LOGO} alt="LOGO" style={{marginTop:"-20px"}}/>
         </Link>
       </div>
@@ -58,9 +58,7 @@ export default function Navbar() {
       <div className="navbar-end">
         {
           username?username:<Link to="/login"><button className="btn btn-outline btn-error">Login</button></Link>
-        }
-      
-       
+        } 
       </div>
     </div>
   );

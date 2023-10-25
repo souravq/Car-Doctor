@@ -1,0 +1,14 @@
+.checkoutHeading{
+   margin-top: 20px;
+   margin-bottom: 30px;
+font-family: Inter;
+font-size: 35px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.checkoutCard{
+    border-radius: 10px;
+background: var(--Dark-07, #F3F3F3);
+}
