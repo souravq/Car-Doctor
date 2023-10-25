@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import LOGO from "../../../assets/icons/logo.svg";
 import "./Navbar.css";
+import { useContext } from "react";
+import { AuthContext1 } from "../../../AuthContext/AuthContext";
 
 export default function Navbar() {
+
+  const {username} = useContext(AuthContext1);
 
     const options =<>
         <li>Home</li>
@@ -52,7 +56,10 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-      <button className="btn btn-outline btn-error">Appointment</button>
+        {
+          username?username:<Link to="/login"><button className="btn btn-outline btn-error">Login</button></Link>
+        }
+      
        
       </div>
     </div>
