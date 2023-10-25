@@ -1,0 +1,27 @@
+.LoginHeading{
+    color: var(--Dark-02, #444);
+text-align: center;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 50px;
+}
+.haveAnAccount{
+    color: var(--Dark-03, #737373);
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.signUpLink{
+    color: var(--ff-3811, #FF3811);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
